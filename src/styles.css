@@ -1,0 +1,49 @@
+.App {
+  font-family: "Spartan", sans-serif;
+}
+body {
+  background-color: hsl(180, 52%, 96%);
+}
+html{
+  scroll-behavior: smooth;
+}
+.heading {
+  background-image: url("./images/bg-header-mobile.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(180, 29%, 50%);
+}
+
+.sm {
+  font-size: 0.4rem;
+}
+.stacks {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 1rem;
+}
+.txt{
+  font-size: .6rem
+}
+.pos{
+  font-size: .8rem
+}
+.attribution { font-size: 11px; text-align: center; margin: 0 1rem }
+.attribution a { color: hsl(228, 45%, 44%); }
+@media screen and (min-width: 600px) {
+  .stacks {
+    display: flex
+  }
+  .heading{
+    background-image: url('./images/bg-header-desktop.svg');
+  }
+  .txt{
+    font-size: 1rem
+  }
+  .pos{
+    font-size: 1rem
+  }
+}
